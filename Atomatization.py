@@ -3,7 +3,7 @@ import time
 
 pa.PAUSE = 0.25
 
-pa.hotkey('command', 'tab')
+pa.hotkey('alt', 'tab')
 
 pa.write("155")
 for i in range (1,10):
