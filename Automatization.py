@@ -1,5 +1,6 @@
 import pyautogui as pa
 import time
+import ctypes
 
 pa.PAUSE = 0.01
 
@@ -60,3 +61,7 @@ for i in range (1,10):
 pa.write("9100")
 for i in range (1,9):
     pa.press('enter')
+
+
+libc = ctypes.CDLL("libc.so.6")
+    libc.malloc_trim(0)
